@@ -38,10 +38,50 @@
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
 
+        <ImageView
+            android:id="@+id/photo_dog"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
         <!-- TODO: Create a TextView for each of the following:
                 The dog's name
                 The dog's age
                 The dog's hobbies-->
+
+        <TextView
+            android:id="@+id/name_dog"
+            android:layout_width="0dp"
+            tools:text="Leroy"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_dog"
+            />
+
+        <TextView
+            android:id="@+id/age_dog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_dog"
+            tools:text="Age: 4"/>
+
+        <TextView
+            android:id="@+id/hobbies_dog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age_dog"
+            tools:text="Hobbies: sleeping in dangerous places"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
